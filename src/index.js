@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './Scaffold';
+import Scaffold from './Scaffold';
 import Home from './Home';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
@@ -17,7 +17,6 @@ import {
   Route, 
   RouterProvider 
 } from 'react-router-dom';
-import Scaffold from './Scaffold';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
