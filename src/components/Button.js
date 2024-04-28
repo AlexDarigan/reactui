@@ -17,8 +17,9 @@ function Button(props) {
                 alignSelf: props.alignSelf,
                 width: props.width,
                 padding: props.padding
-
-        }}>
+        }}
+            onClick={props.onClick}
+        >
             <strong>{props.text}</strong>
         </button>
     )
@@ -28,7 +29,8 @@ Button.defaultProps = {
     backgroundColor: null,
     width: "fit-content",
     padding: "10px",
-    alignSelf: "center"
+    alignSelf: "center",
+    onClick: () => {}
 }
 
 export default Button;

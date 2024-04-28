@@ -3,6 +3,7 @@ function Column(props) {
         <div style={{
             display: "flex", 
             flexDirection: "column",
+            height: props.height,
             width: props.width,
             alignItems: props.alignHorizontal,
             gap: props.gap,
@@ -18,10 +19,11 @@ function Column(props) {
 export default Column;
 
 Column.defaultProps = {
+    height: "fit-content",
     width: "fit-content",
-    alignHorizontal: "left",
+    alignHorizontal: "center",
     gap: "10px",
     backgroundColor: "#ffffff00",
     margin: "0px",
-    padding: "0px"
+    padding: "0px",
 }

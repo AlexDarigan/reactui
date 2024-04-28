@@ -5,6 +5,7 @@ import BlackLotus from "../icons/blacklotus.png";
 import ScrollGrid from "../layout/ScrollGrid";
 import Button from "../components/Button"
 import CardListing from "../components/CardListing";
+import { Link } from "react-router-dom";
 
 function ViewCard () {
     return (
@@ -21,7 +22,9 @@ function ViewCard () {
                <CardListing/>
             </ScrollGrid>
         </Row>
-        <Button text="Checkout"/>
+        <Link to="/cart">
+            <Button text="View Cart"/>
+        </Link>
        </Panel>
     );
 }

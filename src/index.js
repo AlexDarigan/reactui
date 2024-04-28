@@ -20,13 +20,13 @@ import {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Scaffold/>}>
+      <Route index element={<Signup/>}/>
       <Route path="signup" element={<Signup/>}/>
       <Route path="login" element={<Login/>}/>
       <Route path="profile" element={<Profile/>}/>
       <Route path="settings" element={<Settings/>}/>
       <Route path="browse" element={<Browse/>}/>
       <Route path="card" element={<ViewCard/>}/>
- 
       <Route path="cart" element={<Cart/>}/>
       <Route path="checkout" element={<Checkout/>}/>
     </Route>
