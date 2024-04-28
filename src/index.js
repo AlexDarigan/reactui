@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Scaffold from './Scaffold';
-import Home from './Home';
+import Scaffold from './layout/Scaffold';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
 import Profile from './pages/Profile';
@@ -21,7 +20,6 @@ import {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Scaffold/>}>
-      <Route path="home" element={<Home/>}/>
       <Route path="signup" element={<Signup/>}/>
       <Route path="login" element={<Login/>}/>
       <Route path="profile" element={<Profile/>}/>
