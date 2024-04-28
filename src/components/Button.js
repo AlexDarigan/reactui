@@ -14,12 +14,20 @@ function Button(props) {
                 fontFamily: "sans-serif",
                 borderRadius: '8px',
                 textAlign: "center",
-                padding: '10px'
+                alignSelf: props.alignSelf,
+                width: props.width,
+                padding: props.padding
 
         }}>
             <strong>{props.text}</strong>
         </button>
     )
+}
+
+Button.defaultProps = {
+    width: "fit-content",
+    padding: "10px",
+    alignSelf: "center"
 }
 
 export default Button;
