@@ -17,7 +17,7 @@ function Button(props) {
                 padding: '10px'
 
         }}>
-            <strong>Login</strong>
+            <strong>{props.text}</strong>
         </button>
     )
 }

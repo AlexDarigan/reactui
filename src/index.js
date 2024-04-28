@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Scaffold from './layout/Scaffold';
 import Signup from './pages/Signup';
-import Login from './pages/login/Login';
+import Login from './pages/Login';
 import Profile from './pages/Profile';
 import Settings from './pages/Settings';
 import Cart from './pages/Cart';

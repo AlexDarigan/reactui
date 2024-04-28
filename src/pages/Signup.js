@@ -15,7 +15,7 @@ function Signup () {
             <IconTextInput label="Email" icon={<MailIcon/>}/>
             <IconTextInput label="Password" icon={<PasswordIcon/>}/>
             <IconTextInput label="Confirm Password" icon={<PasswordIcon/>}/>
-            <LinkButton route="/browse"/>
+            <LinkButton route="/login" text="Sign Up"/>
         </Column>
     </Panel>
     );
