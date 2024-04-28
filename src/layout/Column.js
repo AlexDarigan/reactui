@@ -3,7 +3,7 @@ function Column(props) {
         <div style={{
             display: "flex", 
             flexDirection: "column",
-            gap: "10px"
+            gap: props.gap
         }}>
             {props.children}
         </div>
@@ -11,3 +11,7 @@ function Column(props) {
 }
 
 export default Column;
+
+Column.defaultProps = {
+    gap: "10px"
+}

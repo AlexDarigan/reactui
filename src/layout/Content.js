@@ -9,9 +9,11 @@ function Content() {
     return (
       <main style={{
           backgroundColor: theme.surface, 
+          justifyContent: 'center',
+          alignContent: 'center',
           height: '100vh'
         }}>
-          <Outlet/>
+        <Outlet/>
       </main>
     )
   }
