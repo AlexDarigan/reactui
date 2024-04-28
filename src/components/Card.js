@@ -5,6 +5,7 @@ import Label from "./Label"
 import Column from "../layout/Column"
 import Image from "./Image"
 import Panel from "../layout/Panel"
+import { Link } from "react-router-dom"
 
 function Card({title, game, image}) {
     const theme = useContext(ThemeContext)
@@ -15,7 +16,9 @@ function Card({title, game, image}) {
             <Label label={title} fontColor={theme.onSecondary}/>
             <Image src={image}/>
             <Label label={game}/>
-            <ViewIcon/>
+            <Link to="/cart?name=dumb&age=30">
+                <ViewIcon/>
+            </Link>
         </Column>        
         </Panel>
     )
