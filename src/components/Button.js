@@ -7,7 +7,7 @@ function Button(props) {
     return (
         <button 
             style={{
-                backgroundColor: theme.secondary,
+                backgroundColor: props.backgroundColor ? props.backgroundColor: theme.secondary,
                 color: theme.onSecondary,
                 fontSize: '26px',
                 fontWeight: "extra bold",
@@ -25,6 +25,7 @@ function Button(props) {
 }
 
 Button.defaultProps = {
+    backgroundColor: null,
     width: "fit-content",
     padding: "10px",
     alignSelf: "center"

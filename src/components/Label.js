@@ -4,8 +4,7 @@ function Label(props) {
         <label style={{
             fontSize: props.fontSize,
             fontWeight: props.fontWeight,
-            color: props.fontColor
-            
+            color: props.fontColor,
          }}>
             {props.label}
         </label>
