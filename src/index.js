@@ -9,6 +9,7 @@ import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Browse from './pages/Browse';
 import ViewCard from './pages/ViewCard';
+import Orders from "./pages/Orders";
 
 import { 
   createBrowserRouter, 
