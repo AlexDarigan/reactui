@@ -7,8 +7,12 @@ import LabelText from "../components/LabelText";
 import { ReactComponent as AvatarIcon } from "../icons/avatar.svg"
 import { ReactComponent as StarsIcon } from "../icons/stars.svg"
 import ScrollGrid from "../layout/ScrollGrid";
+import { Link } from "react-router-dom";
 
 function Profile () {
+    const user = "@AlexDart"
+    const path = "/inbox?user=@AlexDart"
+
     return (
         <Panel width="1024px" height="480px" marginBottom="100px">
             <Row width="100%" height="100%">
@@ -20,7 +24,9 @@ function Profile () {
                     <LabelText label="Joined" text="27th March 2020" fontColor="black"/>
                     <LabelText label="Last Active" text="29th January 2024" fontColor="black"/>
                     <div style={{height: "0.5em"}}></div>
-                    <Button text="Contact"/>
+                    <Link to={path}>
+                    <center><Button text="Contact"/></center>
+                    </Link>
                 </Column>
                 {/* <Column width="50%" alignHorizontal="right" overflow="auto"> */}
                 <ScrollGrid justifyContent="center">

@@ -5,9 +5,12 @@ import Row from "../layout/Row";
 import TextInput from "../components/TextInput";
 import Button from "../components/Button";
 import Label from "../components/Label";
-
+import { useSearchParams } from "react-router-dom";
 
 function Inbox() {
+    const [searchParams, setSearchParams] = useSearchParams();
+
+
     return (
         <Panel width="800px">
             <Row width="800px">
@@ -24,7 +27,7 @@ function Inbox() {
 
                 </ScrollGrid>
                 <Column margin="8px" height="100%">
-                    <TextInput/>
+                    <TextInput value={searchParams.get("user")}/>
                     <textarea style={{width: "1000px", height: "300px"}}></textarea>
                     <Button text="Send"/>   
                 </Column>

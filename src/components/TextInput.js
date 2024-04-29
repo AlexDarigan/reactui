@@ -7,6 +7,7 @@ function TextInput(props) {
     return (
         <input 
             type="text" 
+            value={props.value}
             style={{
                 border: theme.insetBorder,
                 boxShadow: theme.inset,
@@ -20,7 +21,8 @@ function TextInput(props) {
 
 TextInput.defaultProps = {
     width: "fit-content",
-    borderRadius: "0px"
+    borderRadius: "0px",
+    value: "",
 }
 
 export default TextInput;
