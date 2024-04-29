@@ -5,6 +5,7 @@ function Label(props) {
             fontSize: props.fontSize,
             fontWeight: props.fontWeight,
             color: props.fontColor,
+            fontFamily: props.fontFamily,
          }}>
             {props.label}
         </label>
@@ -18,4 +19,5 @@ Label.defaultProps = {
     fontSize: "18px",
     fontColor: "black",
     fontWeight: "bold",
+    fontFamily: "Roboto Mono, monospace"
 }

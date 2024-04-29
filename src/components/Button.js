@@ -16,7 +16,8 @@ function Button(props) {
                 textAlign: "center",
                 alignSelf: props.alignSelf,
                 width: props.width,
-                padding: props.padding
+                padding: props.padding,
+                fontFamily: props.fontFamily
         }}
             onClick={props.onClick}
         >
@@ -30,6 +31,7 @@ Button.defaultProps = {
     width: "fit-content",
     padding: "10px",
     alignSelf: "center",
+    fontFamily: "Roboto Mono, monospace",
     onClick: () => {}
 }
 

@@ -14,7 +14,8 @@ function TextInput(props) {
                 width: props.width,
                 fontSize: "18px",
                 padding: "5px",
-                borderRadius: props.borderRadius
+                borderRadius: props.borderRadius,
+                fontFamily: props.fontFamily
         }}/>
     )
 }
@@ -22,6 +23,7 @@ function TextInput(props) {
 TextInput.defaultProps = {
     width: "fit-content",
     borderRadius: "0px",
+    fontFamily: "Roboto Mono, monospace",
     value: "",
 }
 
