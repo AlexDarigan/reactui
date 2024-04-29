@@ -9,7 +9,8 @@ function Column(props) {
             gap: props.gap,
             margin: props.margin,
             padding: props.padding,
-            backgroundColor: props.backgroundColor
+            backgroundColor: props.backgroundColor,
+            overflow: "auto"
         }}>
             {props.children}
         </div>
