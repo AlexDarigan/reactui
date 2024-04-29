@@ -7,7 +7,8 @@ function Row(props) {
             width: props.width,
             alignItems: props.alignVertical, 
             gap: props.gap,
-            backgroundColor: props.backgroundColor
+            backgroundColor: props.backgroundColor,
+            justifyContent: props.justifyContent
         }}>
             {props.children}
         </div>
@@ -22,5 +23,6 @@ Row.defaultProps = {
     width: "fit-content",
     alignVertical: "center",
     gap: "10px", 
-    backgroundColor: "#ffffff00"
+    backgroundColor: "#ffffff00",
+    justifyContent: "space-evenly"
 }
