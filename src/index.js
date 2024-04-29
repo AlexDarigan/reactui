@@ -10,6 +10,7 @@ import Checkout from './pages/Checkout';
 import Browse from './pages/Browse';
 import ViewCard from './pages/ViewCard';
 import Orders from "./pages/Orders";
+import Inbox from './pages/Inbox';
 
 import { 
   createBrowserRouter, 
@@ -31,6 +32,7 @@ const router = createBrowserRouter(
       <Route path="cart" element={<Cart/>}/>
       <Route path="checkout" element={<Checkout/>}/>
       <Route path="orders" element={<Orders/>}/>
+      <Route path="inbox" element={<Inbox/>}/>
     </Route>
   )
 )

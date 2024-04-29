@@ -20,7 +20,7 @@ function Checkout () {
             <IconTextInput label="Shipping Address" icon={<Button text={<DownIcon style={{width:"24px", height: "24px"}}/>}/>}/>
             <IconTextInput label="Billing Address" icon={<Button text={<DownIcon style={{width:"24px", height: "24px"}}/>}/>}/>
             </Column>
-            <Column width="100%">
+            <Column>
                 <Row width="80%">
                         <Label label="Quantity"/>
                         <span style={{width:"80%"}}/>
